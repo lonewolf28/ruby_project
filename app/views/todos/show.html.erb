@@ -1,5 +1,9 @@
 <h1>Showing the todo app</h1>
 <p>
-Name: <%= @todo.name %><br>
-Description: <%= @todo.description %>
+    Name: <%= @todo.name %> <br>
+    Description: <%= @todo.description %>
+</p>
+<p>
+    <%= link_to "Go back", todos_path %>|
+    <%= link_to "Edit", edit_todo_path(@todo.id) %>
 </p>

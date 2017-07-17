@@ -1,5 +1,5 @@
-<h1>This a todo app</h1>
-  <% if @todo.errors.any? %>
+<h1>You are in edit page</h1>
+<% if @todo.errors.any? %>
   <h2>Form not saved. Following error occured</h2>
     <ul>
       <% @todo.errors.full_messages.each do |msg| %>       
